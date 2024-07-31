@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('Font/TTLakes-ExtraLight.woff') format('woff'),
+    url('Font/TTLakes-DemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('Font/TTLakes-DemiBold.woff') format('woff');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'TTLakes';
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed from center to align title to the left */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px; /* Add some horizontal padding */
+    background-color: #efefef;
+}
+
+.slider-title {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between title and slider */
+    align-self: flex-start; /* Ensures the title stays on the left */
+    color: #7E7E82;
+    width: 100%;
+    border-top: 1px solid #D9FFF5;
+    padding-top: 15px;
+}
+
+
+.swiper-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 16px; /* Add bottom padding for vertical spacing */
+}
+
+.swiper-slide {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 40px;
+    box-sizing: border-box;
+    /* border: 1px solid #dfdfdf; */
+}
+
+.slide-image-company {
+    position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-image-go {
+    position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#show-more {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+#show-more img {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+    margin-right: 8px;
+}
+
+#show-more span {
+    vertical-align: middle;
+}
+
+.swiper-wrapper {
+    margin-bottom: 20px;
+}
